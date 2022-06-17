@@ -1,0 +1,29 @@
+{
+  "name": "mojamfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose --coverage",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/villiger9/mojamFrontEnd.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/villiger9/mojamFrontEnd/issues"
+  },
+  "homepage": "https://github.com/villiger9/mojamFrontEnd#readme",
+  "dependencies": {
+    "jest": "^28.1.1",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13.3.0",
+    "cypress": "^10.1.0"
+  }
+}

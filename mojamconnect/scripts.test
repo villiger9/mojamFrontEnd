@@ -1,0 +1,26 @@
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+import React from 'react';
+import App from './scripts';
+import { shallow } from 'enzyme'
+
+describe("[UNIT] Testing the App component", () => {
+  let wrapper
+  
+  beforeEach(() => {
+    wrapper = shallow(<App/>)
+  })
+
+  describe("Component validation", () => {    
+    it('should render <App />', () => {
+			expect(wrapper.length).toBe(1);
+    });
+    
+    it('displays 0 as a default value', () => {
+      expect(wrapper.find("h1").text()).toBeTruthy()   
+    })
+  
+  })
+})

@@ -70,6 +70,6 @@ let full = [
       card.addEventListener("click", myFunc);
 
       function myFunc(){
-        window.open(l1.textContent);
+        window.open(l1.textContent,"_self");
     }
     };
